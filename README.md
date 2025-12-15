@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# ⚡ Premium Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **high-performance, visually immersive personal portfolio website** built using **React.js** and **Tailwind CSS**.  
+This portfolio is designed with a **premium “Peak” aesthetic**, featuring deep-space animations, glassmorphism UI, and a fully responsive layout — optimized for both **recruiters and developers**.
 
-## Available Scripts
+<img width="1919" height="900" alt="image" src="https://github.com/user-attachments/assets/d417e44b-cf24-4d13-ab20-f3da3ca8cb38" />
+<img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/928fa112-1df3-443d-a281-593518ea53b2" />
 
-In the project directory, you can run:
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔗 **Portfolio Website:**  
+👉 https://rohit02k5.github.io/Portfolio-Website/
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Key Highlights
 
-### `npm run build`
+### 🌌 Advanced Background Aesthetics
+- **Dynamic Particle & Starfield System** with twinkling stars and shooting meteors
+- **Nebula Glow Effects** using advanced CSS `mix-blend-modes`
+- **Interactive Cursor Spotlight** for subtle depth and immersion
+- Fully optimized to preserve performance in dark-mode environments
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🎨 Modern UI / UX Design
+- **Extreme Dark Theme** (`#000000`) for a premium low-light experience
+- **Glassmorphism UI** using backdrop blur and translucent layers
+- **Micro-Interactions & Animations** powered by **Framer Motion**
+- Smooth hover effects, glowing borders, and scale transitions
+- **Fully Responsive Design** across Desktop, Tablet, and Mobile
+- Custom mobile-friendly navigation menu
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 🧩 Portfolio Sections
+- **Terminal-Style Hero Section** with typewriter effect (`react-typed`)
+- **About Me** section with structured typography and visual highlights
+- **Experience Timeline** showcasing internships and leadership roles
+- **Projects Showcase** with interactive cards and live/demo links
+- **Key Courses** displayed using pill-style UI
+- **Achievements & Certifications** in glass-styled cards
+- **Contact Form** integrated with **GetForm.io** (validation + floating UI)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🔹 Core Technologies
+- **React.js (v18)** — Component-based architecture with Hooks
+- **JavaScript (ES6+)**
+- **HTML5 & CSS3**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 🎨 Styling & Animations
+- **Tailwind CSS** — Utility-first styling with custom theme extensions
+- **Framer Motion** — Animations, transitions, and gestures
+- **React Icons** — Modular icon usage
+- **React Scroll** — Smooth section navigation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### ⚙️ Tools & Deployment
+- **npm** — Dependency management
+- **Git & GitHub** — Version control
+- **GitHub Pages** — Automated deployment via `gh-pages`
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 💻 Getting Started (Local Setup)
 
-### Analyzing the Bundle Size
+Follow the steps below to run the project locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/rohit02k5/Portfolio-Website.git
+cd Portfolio-Website/Portfolio-1
+```
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+### 3️⃣ Start Development Server
+```bash
+npm start
+```
+The application will run at:
+```bash
+http://localhost:3000
+```
+### 📂 Project Structure
+```bash
+src/
+├── components/
+│   ├── About.jsx                 # About section with glass UI
+│   ├── Achievements.jsx          # Certifications & achievements
+│   ├── Contact.jsx               # Contact form & details
+│   ├── Education.jsx             # Academic history
+│   ├── Experience.jsx            # Work experience timeline
+│   ├── GradientBackground.jsx    # Particle + nebula background
+│   ├── KeyCourses.jsx            # Coursework pills
+│   ├── NavBar.jsx                # Responsive floating navbar
+│   ├── Projects.jsx              # Project showcase grid
+│   ├── Skills.jsx                # Tech stack icons
+│   └── TerminalHero.jsx          # Hero section with typing effect
+├── App.js                        # Root component
+├── index.css                     # Global Tailwind styles
+└── tailwind.config.js            # Tailwind customization
+```
+### 📫 Contact
+Swarna Venkata Sai Rohit
+🎓 B.Tech Electrical Engineering, IIT Bhilai
 
-### Making a Progressive Web App
+📧 Email: swarnas@iitbhilai.ac.in
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🔗 LinkedIn: https://www.linkedin.com/in/swarna-venkata-sai-rohit-33068925a/
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🧑‍💻 GitHub: https://github.com/rohit02k5
+<p align="center"> Built with ❤️ using <strong>React.js</strong> and <strong>Tailwind CSS</strong> </p> ```
