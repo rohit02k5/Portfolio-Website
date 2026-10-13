@@ -1,6 +1,3 @@
-import { useScrollProgress, useTheme } from "./lib/hooks";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -9,30 +6,20 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import CursorGlow from "./components/CursorGlow";
 
+// Navbar, hero, footer and all above-fold interactivity are static HTML in
+// index.html (paint before JS loads — that's what makes LCP fast).
 export default function App() {
-  const [theme, toggleTheme] = useTheme();
-  const progressRef = useScrollProgress();
-
   return (
     <>
-      <div ref={progressRef} className="scroll-progress" aria-hidden="true" />
-      <CursorGlow />
-      <Navbar theme={theme} onToggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Publications />
-        <Skills />
-        <Education />
-        <Achievements />
-        <Contact />
-      </main>
-      <Footer />
+      <About />
+      <Experience />
+      <Projects />
+      <Publications />
+      <Skills />
+      <Education />
+      <Achievements />
+      <Contact />
     </>
   );
 }
