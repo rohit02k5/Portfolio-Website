@@ -1,7 +1,27 @@
-@import "@fontsource-variable/space-grotesk";
-@import "@fontsource-variable/inter";
-@import "@fontsource-variable/jetbrains-mono";
 @import "tailwindcss";
+
+/* Self-hosted variable fonts — latin subset only, preloaded in index.html */
+@font-face {
+  font-family: "Space Grotesk Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 700;
+  src: url("/Portfolio-Website/fonts/space-grotesk.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/Portfolio-Website/fonts/inter.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url("/Portfolio-Website/fonts/jetbrains-mono.woff2") format("woff2");
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
 
