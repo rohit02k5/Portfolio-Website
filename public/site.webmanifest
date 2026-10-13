@@ -1,0 +1,17 @@
+{
+  "name": "Sai Rohit — Portfolio",
+  "short_name": "Sai Rohit",
+  "description": "AI/ML & Full-Stack Engineer — IIT Bhilai",
+  "start_url": "/Portfolio-Website/",
+  "display": "standalone",
+  "background_color": "#050914",
+  "theme_color": "#050914",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
