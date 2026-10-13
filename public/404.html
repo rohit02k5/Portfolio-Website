@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — Page not found | Sai Rohit</title>
+    <style>
+      :root {
+        --bg: #050914;
+        --fg: #e9f0fd;
+        --muted: #9db2d1;
+        --accent: #38bdf8;
+        --accent2: #4f7fff;
+        --line: rgba(148, 178, 255, 0.12);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+          radial-gradient(60vw 60vw at 20% 0%, rgba(37, 99, 235, 0.22), transparent 60%),
+          radial-gradient(
+            45vw 45vw at 85% 20%,
+            rgba(56, 189, 248, 0.15),
+            transparent 60%
+          ),
+          var(--bg);
+        color: var(--fg);
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        text-align: center;
+        padding: 2rem;
+      }
+      .code {
+        font-size: clamp(5rem, 20vw, 10rem);
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        line-height: 1;
+        background: linear-gradient(100deg, var(--accent), var(--accent2), #8b5cf6);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      h1 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        font-weight: 600;
+      }
+      p {
+        color: var(--muted);
+        margin-top: 0.6rem;
+      }
+      a {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.85rem 1.7rem;
+        border-radius: 0.85rem;
+        font-weight: 600;
+        color: #04121f;
+        background: linear-gradient(115deg, var(--accent), var(--accent2));
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="code">404</div>
+      <h1>This page drifted off the map.</h1>
+      <p>The link is broken or the page moved. Let's get you back.</p>
+      <a href="/Portfolio-Website/">Back to portfolio</a>
+    </main>
+  </body>
+</html>
