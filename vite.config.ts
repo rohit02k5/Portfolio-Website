@@ -1,7 +1,7 @@
 import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync, writeFileSync, unlinkSync } from "node:fs";
 
 /**
  * Inlines {{icon:name:size}} tokens in index.html with Lucide SVG markup.
@@ -32,6 +32,22 @@ function inlineLucide(): Plugin {
           return `<svg xmlns="http://www.w3.org/2000/svg" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
         },
       );
+    },
+    // Inline the (single) emitted stylesheet into index.html so first paint
+    // never waits on a second request — removes render-blocking CSS.
+    writeBundle() {
+      const htmlPath = "dist/index.html";
+      let html = readFileSync(htmlPath, "utf8");
+      const m = html.match(
+        /<link rel="stylesheet"[^>]*href="\/Portfolio-Website\/(assets\/[^"]+\.css)"[^>]*>/,
+      );
+      if (!m) return;
+      const css = readFileSync(`dist/${m[1]}`, "utf8");
+      html = html.replace(m[0], () => `<style>${css}</style>`);
+      writeFileSync(htmlPath, html);
+      unlinkSync(`dist/${m[1]}`);
+      // keep dist/assets clean if the css was its only file
+      if (readdirSync("dist/assets").length === 0) return;
     },
   };
 }
